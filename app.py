@@ -1,11 +1,13 @@
 from flask import Flask, render_template, jsonify, request
+import requests
+import controller
 
 server = Flask(__name__)
 
 
-@server.get('/')
+@server.route('/')
 def index():
-    return "Word"
+    return jsonify({"Message": "Welcome to apy"})
 
 
 if __name__ == '__main__':
