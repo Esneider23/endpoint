@@ -7,33 +7,19 @@ server = Flask(__name__)
 
 @server.get('/')
 def index():
-    return jsonify({"Message": "Welcome to apy"})
+    return "word"
 
 
-"""
-@server.route('/')
-def index():
-    while True:
-        main_api = requests.get("https://service-sales-car-cot.herokuapp.com/show")
-
-        # ask what the code that returned us #! if it is 200, so everything it is correct.
-        if main_api.status_code == 200:
-            print(main_api.json())
-            elements =main_api.json()
-            #for elements in date:
-                #print(elements)
-        return jsonify({
-            'index': elements
-
-        })
- 
+@server.route('/stock/vehiculos')
+def stockL():
+    return controller.listVeh()
 
 
 @server.route('/shopcar')
 def shopCarL():
     return controller.lShopCar()
 
-
+"""
 @server.route('/shopven')
 def shopVenL():
     return controller.shopVen()
