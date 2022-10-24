@@ -5,11 +5,6 @@ import controller
 server = Flask(__name__)
 
 
-@server.route('/stock/vehiculos')
-def stockL():
-    return controller.listVeh()
-
-
 @server.route('/shopcar')
 def shopCarL():
     return controller.lShopCar()
