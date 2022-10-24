@@ -5,11 +5,6 @@ import controller
 server = Flask(__name__)
 
 
-@server.get('/')
-def index():
-    return "word"
-
-
 @server.route('/stock/vehiculos')
 def stockL():
     return controller.listVeh()
@@ -19,7 +14,7 @@ def stockL():
 def shopCarL():
     return controller.lShopCar()
 
-"""
+
 @server.route('/shopven')
 def shopVenL():
     return controller.shopVen()
@@ -42,7 +37,7 @@ def supplierL():
 
 def page_not_found(error):
     return render_template('404.html')
-"""
+
 
 if __name__ == '__main__':
     server.run(debug=True)
