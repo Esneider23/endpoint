@@ -6,7 +6,7 @@ server = Flask(__name__)
 
 @server.route('/')
 def index():
-    return jsonify({"Message": "Welcome to apy"})
+    return "word"
 
 
 if __name__ == '__main__':
