@@ -5,7 +5,7 @@ import controller
 server = Flask(__name__)
 
 
-@server.route('/')
+@server.get('/')
 def index():
     return jsonify({"Message": "Welcome to apy"})
 
