@@ -1,7 +1,6 @@
 from flask import jsonify
 import requests
 
-from app import vehName
 
 model = ["https://service-sales-car-cot.herokuapp.com/show", "https://service-sales-car-cot.herokuapp.com/shotcar"]
 inf = []
