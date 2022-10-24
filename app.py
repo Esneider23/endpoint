@@ -9,7 +9,7 @@ server = Flask(__name__)
 def index():
     return jsonify({"Message": "Welcome to apy"})
 
-
+"""
 """ @server.route('/')
 def index():
     while True:
@@ -55,7 +55,7 @@ def supplierL():
 
 def page_not_found(error):
     return render_template('404.html')
-
+"""
 
 if __name__ == '__main__':
     server.run(debug=True)
