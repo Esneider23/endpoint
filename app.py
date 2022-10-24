@@ -7,7 +7,7 @@ server = Flask(__name__)
 
 @server.get('/')
 def index():
-    return jsonify({"Message": "Welcome to apy"})
+    return {"Message": "Welcome to apy"}
 
 """
 """ @server.route('/')
