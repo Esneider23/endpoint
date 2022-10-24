@@ -60,5 +60,8 @@ def listSupplier():
     return jsonify({'supplier': supplier})
 
 
+""" if __name__ == '__main__':
+    listVeh() """
+
 
 
