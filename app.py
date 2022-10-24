@@ -9,8 +9,9 @@ server = Flask(__name__)
 def index():
     return {"Message": "Welcome to apy"}
 
+
 """
-""" @server.route('/')
+@server.route('/')
 def index():
     while True:
         main_api = requests.get("https://service-sales-car-cot.herokuapp.com/show")
@@ -25,7 +26,7 @@ def index():
             'index': elements
 
         })
- """
+ 
 
 
 @server.route('/shopcar')
