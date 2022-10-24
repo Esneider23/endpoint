@@ -1,5 +1,4 @@
 from flask import Flask, render_template, jsonify, request
-import requests
 import controller
 
 server = Flask(__name__)
